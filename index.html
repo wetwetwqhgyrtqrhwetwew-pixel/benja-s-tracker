@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benja’s Tracker</title>
+<meta name="description" content="Benja’s Tracker ranks who earned Roblox badges first for a Discord community.">
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--muted:#5f6368;--line:#e3e3e8;--accent:#4f46e5;--card:#f6f6f9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121214;--fg:#ececf0;--muted:#a0a0aa;--line:#2b2b31;--accent:#8b87ff;--card:#1b1b1f}}
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:42rem;margin:0 auto;padding:3rem 1.25rem 4rem}
+h1{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+h2{font-size:1.2rem;margin:2.2rem 0 .5rem}
+p,li{color:var(--fg)}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:2.5rem;font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.25rem;margin:1rem 0}
+ol,ul{padding-left:1.3rem}
+footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.05rem .35rem;font-size:.92em}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html"><strong>Benja’s Tracker</strong></a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+
+<h1>Benja’s Tracker</h1>
+<p class="muted">A Discord bot that ranks who earned Roblox badges first.</p>
+
+<p>Benja’s Tracker is used by a Discord community that runs badge races. For a chosen set of Roblox badges, grouped into events, the bot shows who earned each badge first, who finished all of an event’s badges, and in what order, and it posts an announcement in Discord when someone earns one.</p>
+
+<h2>Why it asks to connect your Roblox account</h2>
+<p>Roblox lets other people see your inventory only if you set it to public. Members who keep their inventory private can choose to connect their account instead, so the bot can read the badges they earned without making their inventory public.</p>
+
+<div class="card">
+<strong>What the app asks for</strong>
+<ul>
+<li><code>openid</code>: tells the bot which Roblox account you connected.</li>
+<li><code>user.inventory-item:read</code>: lets the bot read your inventory. The bot only asks Roblox for the specific badges the community tracks, and only stores when you earned them.</li>
+</ul>
+<p class="muted" style="margin-bottom:0">It cannot change anything on your account, spend Robux, trade, or message anyone.</p>
+</div>
+
+<h2>How connecting works</h2>
+<ol>
+<li>An admin of the Discord community adds your Roblox username to the player list.</li>
+<li>In Discord, run <code>/link</code> and press the button the bot sends you.</li>
+<li>Log in to Roblox if asked, review the permissions, and press <strong>Allow</strong>.</li>
+<li>You are sent back to a confirmation page. That is all.</li>
+</ol>
+<p>You must have a Roblox account that is 13 or older to connect it.</p>
+
+<h2>Disconnecting</h2>
+<p>Run <code>/unlink</code> in Discord at any time. This revokes the bot’s access and deletes the saved login. You can also remove the app from your Roblox account settings, or ask the operator to delete your data (see the contact details in the <a href="privacy.html">Privacy Policy</a>).</p>
+
+<h2>Read more</h2>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+
+<footer>Benja’s Tracker is an independent community project. It is not made by, affiliated with, or endorsed by Roblox Corporation. Roblox is a trademark of Roblox Corporation.</footer>
+</main>
+</body>
+</html>
