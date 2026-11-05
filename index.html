@@ -21,6 +21,7 @@ nav{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:2.5rem;font-size:.95re
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.25rem;margin:1rem 0}
 ol,ul{padding-left:1.3rem}
 footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.button{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:.7rem 1.2rem;border-radius:10px;font-weight:600}
 code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.05rem .35rem;font-size:.92em}
 </style>
 </head>
@@ -32,6 +33,13 @@ code{background:var(--card);border:1px solid var(--line);border-radius:6px;paddi
 <p class="muted">A Discord bot that ranks who earned Roblox badges first.</p>
 
 <p>Benja’s Tracker is used by a Discord community that runs badge races. For a chosen set of Roblox badges, grouped into events, the bot shows who earned each badge first, who finished all of an event’s badges, and in what order, and it posts an announcement in Discord when someone earns one.</p>
+
+<div class="card">
+<strong>Try it now</strong>
+<p style="margin:.4rem 0 .9rem">Connect your Roblox account and see exactly what the app does: you log in on Roblox, approve access, and this page shows one example badge read from your inventory. Access is revoked immediately and nothing is stored.</p>
+<a class="button" href="https://benjastracker.wetwetwqhgyrtqrhwetwew.workers.dev/login">Connect your Roblox account</a>
+<p class="muted" style="margin:.8rem 0 0;font-size:.9rem">Needs a Roblox account that is 13 or older.</p>
+</div>
 
 <h2>Why it asks to connect your Roblox account</h2>
 <p>Roblox lets other people see your inventory only if you set it to public. Members who keep their inventory private can choose to connect their account instead, so the bot can read the badges they earned without making their inventory public.</p>
@@ -47,7 +55,7 @@ code{background:var(--card);border:1px solid var(--line);border-radius:6px;paddi
 
 <h2>How connecting works</h2>
 <ol>
-<li>An admin of the Discord community adds your Roblox username to the player list.</li>
+<li>In the Discord community, an admin adds your Roblox username to the player list. (On this website you can skip this step and just press the button above.)</li>
 <li>In Discord, run <code>/link</code> and press the button the bot sends you.</li>
 <li>Log in to Roblox if asked, review the permissions, and press <strong>Allow</strong>.</li>
 <li>You are sent back to a confirmation page. That is all.</li>
